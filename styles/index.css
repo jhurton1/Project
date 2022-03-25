@@ -1,0 +1,28 @@
+p{
+color: black;
+font-size: 15pt;
+line-height: 2;
+text-indent: 50pt;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: gold;
+}
+
+h2{
+font-size: 20pt;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+.chip{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+  
+}
+h1{
+
+    text-align: center;
+}
