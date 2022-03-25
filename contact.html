@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/navigation.css" />
+    <link rel="icon" href="Boston_Bruins.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/contact.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"
+            ><img
+              src="images/Boston_Bruins.svg.png"
+              alt="Bruins Logo"
+              title="Bruins Logo"
+              height="60"
+          /></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="greatestplayer.html">Greatest Players</a></li>
+        <li><a href="topplayers.html">Top Players</a></li>
+        <li><a href="highlights.html">Highlights</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+      </ul>
+    </nav>
+    <h1>Contact Us</h1>
+    <p>Name: Jack Hurton</p>
+    <p>Email: jhurton1@babson.edu</p>
+    <p>Phone: 978-395-7735</p>
+
+    <p>
+      <a href="https://twitter.com/hurtonjack">Twitter</a>
+    </p>
+    <p>
+      <a href="https://www.instagram.com/jack_hurton/">Instagram</a>
+    </p>
+    <h2>Feedback</h2>
+    <form action="https://oim-apis.herokuapp.com/form" method="post">
+        <div>
+            What do you think of this website?
+            
+            <label>
+              Great
+              <input type="radio" name="thoughts" value="great" />
+            </label>
+            <label>
+                Needs Improvement
+              <input type="radio" name="thoughts" id="need improvment" />
+            </label>
+            <label>
+                Not informative
+              <input type="radio" name="thoughts" id="notimformative" />
+            </label>
+          </div>
+          <div class="comments">
+            <label for="comments">Comments for Improvement:</label>
+        </div>
+    </div class="comments2">
+    <textarea 
+    name="comments" 
+    id="comments" 
+    cols="100" 
+    rows="10"
+   
+ ></textarea>
+<div>
+    <div class="buttons">
+        <button type="submit">
+            Submit 
+        <button type="reset">
+            Reset 
+        </button>
+    </div>
+    </form>
+  </body>
+</html>
