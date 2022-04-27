@@ -11,6 +11,7 @@
     <meta name="description" content="Boston Bruins Hockey Page">
     <meta name="keywords" content="hockey,bruins,boston">
     <meta name="author" content="Jack Hurton">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <nav>
@@ -74,7 +75,7 @@
  ></textarea>
 <div>
     <div class="buttons">
-        <button type="submit">
+        <button type="submit" id="submit">
             Submit 
         <button type="reset">
             Reset 
@@ -82,4 +83,16 @@
     </div>
     </form>
   </body>
+  <script>
+function validate() {
+  let x = document.getElementById("comments").value;
+  if (x=="") {
+    alert("You must add a comment");
+    return false;
+  }
+}
+document.getElementById("submit").onclick = function () {
+        validate();
+      };
+  </script>
 </html>
