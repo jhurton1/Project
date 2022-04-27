@@ -11,6 +11,7 @@
     <meta name="description" content="Boston Bruins Hockey Page">
     <meta name="keywords" content="hockey,bruins,boston">
     <meta name="author" content="Jack Hurton">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
   </head>
   <body>
@@ -59,6 +60,7 @@
 
     <p class="chip">
       <img
+      id="2011chip"
         src="images/2011chip.jpg"
         alt="2011 championship"
         title="bruins win cup"
@@ -75,4 +77,27 @@
       TD Garden in downtown Boston, which can hold 17,565 people per game.
     </p>
   </body>
+  <script>
+     function enLarge() {
+        let imageEl = document.getElementById("2011chip");
+        let w = imageEl.width;
+        w = w * 1.25;
+        imageEl.width = w;
+      }
+
+      document.getElementById("2011chip").onmouseover = function () {
+        enLarge();
+      };
+
+      function shrink() {
+        let imageEl = document.getElementById("2011chip");
+        let w = imageEl.width;
+        w = w / 1.25;
+        imageEl.width = w;
+      }
+
+      document.getElementById("2011chip").onmouseout = function () {
+        shrink();
+      };
+  </script>
 </html>
