@@ -74,4 +74,17 @@
       first Stanley Cup in 39 years in 2011.
     </p>
   </body>
+  <script>
+    function changeBackgroundColor() {
+        const bgColors = ["gold", "white"];
+        const n = bgColors.length;
+        const randIndex = Math.floor(Math.random() * n); //random integer in range [0,5]
+        // const b = document.getElementById("bodyA");
+        const b = document.querySelector("body");
+        b.style.backgroundColor = bgColors[randIndex];
+      }
+
+      document.querySelector("h1").onclick = changeBackgroundColor;
+
+  </script>
 </html>
