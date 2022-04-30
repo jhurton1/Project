@@ -34,7 +34,32 @@
         <li><a href="sitemap.html">Sitemap</a></li>
       </ul>
     </nav>
+    <br>
+    <div id="clock">10:19:00</div>
+    <script>
+      function showTime() {
+          // 1. get the correct time
+          const current = new Date();
+          // 2. get hours, minutes, seconds, and display time
+          const hours = current.getHours();
+          let minutes = current.getMinutes();
+          if(minutes < 10){
+              minutes = "0" + minutes;
+          }
+          let seconds = current.getSeconds();
+          if(seconds < 10){
+              seconds = "0" + seconds;
+          }
+          // 3. diplay time
+          document.getElementById("clock").innerText = hours + ":" + minutes + ":" + seconds
+          // 4. keep updating the time -  use setTimeout (showTime,1000)
+          setTimeout(showTime, 1000)
 
+      }
+      document.querySelector("body").onload = function () {
+          showTime();
+      };
+  </script>
     <h1>
       All About the Boston Bruins
       <img
@@ -45,6 +70,7 @@
         class="center"
       />
     </h1>
+   
     <h2>History</h2>
     <p>
       The Boston Bruins were founded in 1924 and were the first American team to
@@ -68,7 +94,7 @@
       />
     </p>
 
-    <p>
+    <p id="manage">
       The owner of the Boston Bruins is Jeremy Jacobs and the general manager is
       Don Sweeney. Their current head coach is Bruce Cassidy who has been in
       charge since 2017. Their captain since 2020 is Patrice Bergeron. They are
@@ -99,5 +125,15 @@
       document.getElementById("2011chip").onmouseout = function () {
         shrink();
       };
+
+      function changetextColor() {
+document.getElementById("manage").style.color="white"
+
+      };
+      document.getElementById("manage").onmouseover =  function () {
+        changetextColor();
+      };
+
+
   </script>
 </html>
